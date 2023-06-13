@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<!-- mybatis log 남기는 api를 사용하겠다 -> boot에서는 인식X. 오류남.-->
+<!-- 	<settings>
+		<setting name="logImpl" value="LOG4J"/>
+	</settings> -->
+	
+	<typeAliases>
+		<typeAlias type="chatbot.PizzaDTO" alias="pizza"/> 
+	</typeAliases>
+		
+</configuration>

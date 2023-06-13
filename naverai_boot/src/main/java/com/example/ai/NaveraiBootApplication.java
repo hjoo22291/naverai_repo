@@ -1,9 +1,11 @@
 package com.example.ai;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+import chatbot.PizzaMapper;
 import objectdetection.ObjectDetectionController;
 
 @SpringBootApplication
@@ -18,6 +20,7 @@ import objectdetection.ObjectDetectionController;
 @ComponentScan(basePackages = "mymapping")
 @ComponentScan(basePackages = "ocr")
 @ComponentScan(basePackages = "chatbot")
+@MapperScan(basePackageClasses = PizzaMapper.class) //mapper도 스캔 지정해줘야함.
 public class NaveraiBootApplication {
 
 	public static void main(String[] args) {
